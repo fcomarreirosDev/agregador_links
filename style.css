@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: RobotoSlab-Regular;
+    src: url(assets/RobotoSlab-Regular.ttf);
+}
+
+
+
+body {
+
+    background: linear-gradient(360deg, rgba(34, 28, 31, 1) 0%, rgba(121, 175, 240, 1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    width: 70%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    position: relative;
+    z-index: 2;
+
+}
+
+main .card-details {
+    background-color: transparent;
+    position: relative;
+    top: -70px;
+    padding: 80px 40px 20px 40px;
+    border-radius: 15px;
+    border: 2px solid #666;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    font-family: RobotoSlab-Regular;
+
+}
+
+main h1 {
+    font-size: 28px;
+}
+
+main p {
+    font-size: 18px;
+}
+
+a {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+main .projects a {
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 0px;
+    border-radius: 20px;
+    margin: 12px 0px 12px 0px;
+    transition: all 200ms ease-out;
+
+
+}
+
+main .projects a:hover {
+    transform: scale(1.1);
+}
+
+main img {
+    width: 200px;
+
+}
+
+main .social-links {
+    display: flex;
+}
+
+main .social-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0, 6);
+    font-size: 28px;
+    margin: 0px 15px;
+    margin-top: -50px;
+    transition: all 300ms ease-in;
+}
+
+main .social-links a:hover {
+    color: #fff;
+    filter: drop-shadow(0 0 10px #fff);
+}
+
+@media screen :end(max-width: 500px) {
+    main {
+        width: 100%;
+    }
+}
